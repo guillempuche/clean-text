@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Eliminar Canvis de Línia</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open Sans"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="introduction">
+      <p>Eliminar canvis de línia</p>
+      <p>No eliminar canvis de paràgrafs</p>
+    </div>
+    <div class="input">
+      <div>
+        <textarea
+          id="input__textarea"
+          class="textarea input__textarea"
+          rows="6"
+          cols="50"
+          autofocus
+          placeholder="Copia el text que contingui canvis de línia"
+        ></textarea>
+      </div>
+      <div>
+        <button class="btn btn__convert-copy" onclick="convertTextAndCopy()">
+          Convertir Y Copiar
+        </button>
+      </div>
+    </div>
+    <div class="output">
+      <textarea
+        id="output__textarea"
+        class="textarea output__textarea"
+        placeholder="Aquí hi apareix el text convertit"
+      ></textarea>
+      <div>
+        <button class="btn btn__copy" onclick="copyToClipboard()">
+          Copiar
+        </button>
+      </div>
+    </div>
+    <script src="script.js" async></script>
+  </body>
+</html>
