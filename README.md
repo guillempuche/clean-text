@@ -23,4 +23,10 @@ Broad scientific consensus exists that human activity is causing climate change,
 A rapid transition from fossil fuels to renewables has been widely advocated.
 ```
 
-Live webiste with CodeSandbox https://9vgf4.csb.app/
+---
+
+Live webiste
+
+https://9vgf4.csb.app/
+
+Created with CodeSandbox. [Open the project](https://codesandbox.io/s/github/guillempuche/clean-text)
