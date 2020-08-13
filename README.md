@@ -1,4 +1,4 @@
-# Clean text
+# Clean Text
 
 If you copy text, for example from a PDF, every line of text in a paragraph will be copied as a break line, instead of a continous line.
 
@@ -25,7 +25,7 @@ A rapid transition from fossil fuels to renewables has been widely advocated.
 
 ---
 
-Live webiste
+## Live Website
 
 https://9vgf4.csb.app/
 
