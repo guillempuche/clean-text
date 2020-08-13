@@ -1,10 +1,14 @@
 {
-  "name": "delete-break-lines",
+  "name": "clean-text",
   "version": "1.0.0",
-  "description": "",
+  "description": "If you copy text, for example from a PDF, every line of text in a paragraph will be copied as a break line, instead of a continous line.\n\nIf there are 2 paragraphs, we mantain the break line between the two of them.",
   "main": "index.html",
   "scripts": {},
-  "keywords": [],
+  "keywords": [
+    "pdf",
+    "copy text",
+    "break line"
+  ],
   "license": "MIT",
   "devDependencies": {
     "serve": "^11.2.0"
