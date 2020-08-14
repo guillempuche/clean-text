@@ -30,7 +30,9 @@ function convertText(inputText) {
   return outputText;
 }
 
-async function copyToClipboard(text) {
+async function copyToClipboard() {
+  const text = document.getElementById("output__textarea").value;
+
   try {
     await navigator.clipboard.writeText(text);
   } catch (err) {
