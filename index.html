@@ -23,17 +23,20 @@
         <textarea
           id="input__textarea"
           class="textarea input__textarea"
-          rows="6"
-          cols="50"
+          oninput="
+          // oninput event occurs immediately after the value of an element has
+          // changed, while onchange occurs when the element loses focus, after the
+          // content has been changed. 
+          convertTextAutomatically()"
           autofocus
           placeholder="Copia el text que contingui canvis de línia"
         ></textarea>
       </div>
-      <div>
-        <button class="btn btn__convert-copy" onclick="convertTextAndCopy()">
-          Convertir Y Copiar
-        </button>
-      </div>
+    </div>
+    <div>
+      <button class="btn btn__copy" onclick="copyToClipboard()">
+        Copiar
+      </button>
     </div>
     <div class="output">
       <textarea
@@ -41,11 +44,6 @@
         class="textarea output__textarea"
         placeholder="Aquí hi apareix el text convertit"
       ></textarea>
-      <div>
-        <button class="btn btn__copy" onclick="copyToClipboard()">
-          Copiar
-        </button>
-      </div>
     </div>
     <script src="script.js" async></script>
   </body>

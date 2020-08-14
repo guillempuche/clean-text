@@ -28,6 +28,7 @@ body {
   font-size: 0.8rem;
   resize: none;
   width: 100%;
+  border-color: rgba(4, 150, 248, 0.2);
 }
 
 .input__textarea {
