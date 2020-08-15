@@ -2,7 +2,7 @@
 
 If you copy text, for example from a PDF, every line of text in a paragraph will be copied as a break line, instead of a continous line.
 
-If there are 2 paragraphs, we mantain the break line between the two of them.
+If there are 2 paragraphs, the website maybe will mantain the break line between the two of them (depend on the PDF's text).
 
 In other words:
 
