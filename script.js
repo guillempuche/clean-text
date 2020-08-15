@@ -57,9 +57,7 @@ async function copy() {
  */
 function setAutoCopy(newState) {
   const oldState = checkAutoCopy();
-  console.log("typeof oldState", typeof oldState);
 
-  console.log("newState =", newState);
   if (newState === undefined) newState = !oldState;
 
   // If previous state is true, then the new state has to be false.
@@ -68,11 +66,6 @@ function setAutoCopy(newState) {
   document.cookie = `auto_copy=${newState}; max-age=5184000 ;samesite=strict`;
 
   document.getElementById("switch__input").checked = newState;
-
-  console.log(
-    "switch checked",
-    document.getElementById("switch__input").checked
-  );
 }
 
 /**
@@ -90,14 +83,12 @@ function checkAutoCopy() {
       .find((row) => row.startsWith("auto_copy"))
       .split("=")[1];
 
-    // Convert the cookie value (string) to a boolean.
+    // Convert the cookie value (type of string) to a boolean.
     if (cookieValue === "true") cookieValue = true;
     else cookieValue = false;
   } catch (err) {
     cookieValue = undefined;
   }
-
-  console.log("checkAutoCopy cookie =", cookieValue);
 
   return cookieValue;
 }
