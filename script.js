@@ -32,7 +32,7 @@ function convertText(inputText) {
   let outputText;
 
   // First, replace the changes of paragraphs with `$#`.
-  outputText = inputText.replace(/\n\n/g, "$#");
+  outputText = inputText.replace(/\n{2,}/g, "$#");
   // Second, replace the line breaks with a white space.
   outputText = outputText.replace(/\n/g, " ");
   // Third, replace `$#` with changes of paragraphs.
