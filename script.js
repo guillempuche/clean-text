@@ -1,4 +1,7 @@
-// Initial setting.
+//
+/**
+ * Initialization when page is loaded.
+ */
 function start() {
   // Set the default state of mode auto-copy as false.
   if (checkAutoCopy() === undefined) setAutoCopy(false);
@@ -41,6 +44,9 @@ function convertText(inputText) {
   return outputText;
 }
 
+/**
+ * Copy the output textarea's text.
+ */
 async function copy() {
   const text = document.getElementById("output__textarea").value;
 
@@ -84,11 +90,36 @@ function checkAutoCopy() {
       .split("=")[1];
 
     // Convert the cookie value (type of string) to a boolean.
-    if (cookieValue === "true") cookieValue = true;
-    else cookieValue = false;
+    if (cookieValue === "true") {
+      cookieValue = true;
+    } else {
+      cookieValue = false;
+    }
   } catch (err) {
     cookieValue = undefined;
   }
 
   return cookieValue;
 }
+
+/**
+ * When user press specific key combination, the ouput text is copied.
+ */
+const keyshortcutAndCopy = (e) => {
+  // Key combination: CTRL + ALT + X
+  if (e.ctrlKey && e.altKey && e.keyCode === 88) {
+    console.log("text copied");
+    copy();
+  }
+};
+
+// ************
+// Listeners
+// ************
+
+/**
+ * When user press specific key combination, the ouput text is copied.
+ */
+document.onkeyup = (e) => {
+  keyshortcutAndCopy(e);
+};

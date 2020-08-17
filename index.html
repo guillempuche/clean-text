@@ -23,7 +23,7 @@
       </div>
       <div class="header__switch">
         <label class="switch">
-          <input id="switch__input" type="checkbox" onclick="setAutoCopy()" />
+          <input id="switch__input" type="checkbox" oninput="setAutoCopy()" />
           <span class="slider"></span>
         </label>
       </div>
@@ -43,9 +43,7 @@
         ></textarea>
       </div>
       <div>
-        <button class="btn" onclick="copy()">
-          Copiar
-        </button>
+        <button id="btn-copy" class="btn" onclick="copy()">Copiar</button>
       </div>
       <div class="output">
         <textarea
